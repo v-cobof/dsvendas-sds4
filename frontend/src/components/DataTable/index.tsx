@@ -1,6 +1,6 @@
 const DataTable = () => {
   return (
-    <div className="table-responsive">
+    <div className="table-responsive pb-5 pt-3">
       <table className="table">
         <thead>
           <tr>
