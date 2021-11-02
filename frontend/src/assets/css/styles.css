@@ -31,3 +31,12 @@ html, body {
 .text-primary {
   color: var(--color-primary) !important;
 }
+
+#logo {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1.75rem;
+}
+
+#logoFirst {
+  color: #FF8400;
+}
