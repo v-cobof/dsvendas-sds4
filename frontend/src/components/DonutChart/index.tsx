@@ -13,10 +13,12 @@ const DonutChart = () => {
     }
   }
 
-
+  // '...' is called Spread, and what is does is
+  // it passes all key:value pairs from 'options' object
+  // 
   return (
     <Chart
-      options={{ ...options, labels: mockData.labels }}
+      options={{...options, labels: mockData.labels }}
       series={mockData.series}
       type="donut"
       height="240"
