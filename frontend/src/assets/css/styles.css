@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
 
 :root {
-  --color-primary: #FF8400; /*color-primary é o nome da variável*/
+  --color-primary: #ff8400; /*color-primary é o nome da variável*/
 }
 
-html, body {
+html,
+body {
   height: 100%;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 #root {
@@ -35,8 +36,19 @@ html, body {
 #logo {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 1.75rem;
+  text-decoration: none;
+  color: black;
 }
 
-#logoFirst {
-  color: #FF8400;
+#logoSec {
+  color: #ff8400;
+}
+
+.link {
+  text-decoration: none;
+}
+
+#homain {
+  padding-top: 12vh;
+  padding-bottom: 18vh;
 }
