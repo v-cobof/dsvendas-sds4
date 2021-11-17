@@ -1,4 +1,28 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { SalePage } from "types/sale";
+import { formatLocalDate } from "utils/format";
+import { BASE_URL } from "utils/requests";
+
 const DataTable = () => {
+
+  const [page, setPage] = useState<SalePage>({
+    first: true,
+    last: true,
+    number: 0,
+    totalElements: 0,
+    totalPages: 0
+  });
+
+  // chamar apenas quando a página carregar
+  useEffect(() => {
+    axios.get(`${BASE_URL}/sales?page=0&size=20&sort=date,desc`)
+      .then(response => {
+        setPage(response.data);
+      })
+  }, []);
+
+  
   return (
     <div className="table-responsive pb-5 pt-3">
       <table className="table">
@@ -12,34 +36,25 @@ const DataTable = () => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>22/04/2021</td>
-            <td>Barry Allen</td>
-            <td>34</td>
-            <td>25</td>
-            <td>15017.00</td>
-          </tr>
-          <tr>
-            <td>22/04/2021</td>
-            <td>Barry Allen</td>
-            <td>34</td>
-            <td>25</td>
-            <td>15017.00</td>
-          </tr>
-          <tr>
-            <td>22/04/2021</td>
-            <td>Barry Allen</td>
-            <td>34</td>
-            <td>25</td>
-            <td>15017.00</td>
-          </tr>
-          <tr>
-            <td>22/04/2021</td>
-            <td>Barry Allen</td>
-            <td>34</td>
-            <td>25</td>
-            <td>15017.00</td>
-          </tr>
+          {page.content?.map(item => ( 
+            /* esse key é uma necessidade do react. 
+             Ao mostrar uma coleção (i.e  tenho 1 <tr>, 
+              mas várias linhas aparecem na tela), 
+             cada item precisa de um id diferente
+             nesse caso está aproveitando o id que vem do 
+             próprio banco de dados
+            */
+            <tr key={item.id}>
+              <td>{formatLocalDate(item.date, "dd/MM/yyyy")}</td>
+              <td>{item.seller.name}</td>
+              <td>{item.visited}</td>
+              <td>{item.deals}</td>
+              <td>{item.amount.toFixed(2)}</td>
+            </tr>
+            // to fixed é para arredondar para duas casas
+          ))}
+          
+
         </tbody>
       </table>
     </div>
