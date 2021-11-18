@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { SalePage } from "types/sale";
 import { formatLocalDate } from "utils/format";
 import { BASE_URL } from "utils/requests";
-import   Pagination  from "../Pagination";
+import Pagination from "../Pagination";
 
 const DataTable = () => {
 
@@ -17,10 +17,12 @@ const DataTable = () => {
     totalPages: 0
   });
 
-  /* chamar apenas quando a página carregar
+  /*
+  Chamar apenas quando a página carregar
   o segundo argumento do useEffect serve para que ele
   monitora algo, neste caso, quando o valor de activePage
-  for alterada, o useEffect chama a API de novo*/
+  for alterada, o useEffect chama a API de novo
+  */
 
   useEffect(() => {
     axios.get(`${BASE_URL}/sales?page=${activePage}&size=20&sort=date,desc`)
@@ -37,7 +39,7 @@ const DataTable = () => {
   // aquele {page} no Pagination é aquele do useState acima
   return (
     <>
-      <Pagination page= {page} onPageChange={changePage}/>
+      <Pagination page={page} onPageChange={changePage} />
       <div className="table-responsive pb-5 pt-3">
         <table className="table">
           <thead>
