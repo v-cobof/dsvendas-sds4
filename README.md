@@ -16,10 +16,12 @@ The app was deployed in the cloud, and can be visualized <a href="https://dsvend
 ### Mobile
 <img src="https://user-images.githubusercontent.com/85073588/156373679-a1380583-a69c-48dc-be69-ef54ffd08580.png" style="width: 270px; height: 480px"></img>
 <img src="https://user-images.githubusercontent.com/85073588/156374303-f721383c-ad07-442e-ae32-db7ea5d8e350.png" style="width: 270px; height: 480px"></img>
-<img src="https://user-images.githubusercontent.com/85073588/156374865-d720d90e-162b-44fa-b92f-5e2f8a7234b6.png" style="width: 270px; height: 480px"></img>
+<img src="https://user-images.githubusercontent.com/85073588/156374383-61b19148-831d-4707-be67-5da92a7eb14c.png" style="width: 270px; height: 480px"></img>
 
 ## Conceptual model
-<img src="https://user-images.githubusercontent.com/85073588/156374383-61b19148-831d-4707-be67-5da92a7eb14c.png" style="margin: 0 auto;"></img>
+<div>
+<img src="https://user-images.githubusercontent.com/85073588/156374865-d720d90e-162b-44fa-b92f-5e2f8a7234b6.png" style="margin: 0 auto;"></img>
+</div>
 
 ## Technologies
 
