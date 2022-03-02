@@ -22,12 +22,13 @@ The app was deployed in the cloud, and can be visualized <a href="https://dsvend
 
 ## Conceptual model
 
-<img src="https://user-images.githubusercontent.com/85073588/156374865-d720d90e-162b-44fa-b92f-5e2f8a7234b6.png" align="center"></img>
-
+<div align="center">
+<img src="https://user-images.githubusercontent.com/85073588/156374865-d720d90e-162b-44fa-b92f-5e2f8a7234b6.png"></img>
+</div>
 
 ## Technologies
 
-### backend
+### Backend
 - Java
 - Spring Boot
 - JPA / Hibernate
@@ -35,21 +36,22 @@ The app was deployed in the cloud, and can be visualized <a href="https://dsvend
 - H2 database
 - PostgreSQL
 
-### frontend
+### Frontend
 - HTML
 - CSS
 - Bootstrap
 - TypeScript
 - ReactJS
 
-### deploy
+### Deploy
 - heroku (backend and database)
 - netlify (frontend)
 
-### tools
+### Tools
 - Git
 - VS Code
 - Spring tool suite (STS)
+- Postman
 
 ## How to run the app
 
