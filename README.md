@@ -14,12 +14,12 @@ The app was deployed in the cloud, and can be visualized <a href="https://dsvend
 ![image](https://user-images.githubusercontent.com/85073588/156374232-6b817175-2977-49a8-b920-cf13894d0b21.png)
 
 ### Mobile
-![image](https://user-images.githubusercontent.com/85073588/156373679-a1380583-a69c-48dc-be69-ef54ffd08580.png)
-![image](https://user-images.githubusercontent.com/85073588/156374303-f721383c-ad07-442e-ae32-db7ea5d8e350.png)
-![image](https://user-images.githubusercontent.com/85073588/156374383-61b19148-831d-4707-be67-5da92a7eb14c.png)
+<img style="width: 270px; height: 480px">![image](https://user-images.githubusercontent.com/85073588/156373679-a1380583-a69c-48dc-be69-ef54ffd08580.png)</img>
+<img style="width: 270px; height: 480px">![image](https://user-images.githubusercontent.com/85073588/156374303-f721383c-ad07-442e-ae32-db7ea5d8e350.png)</img>
+<img style="width: 270px; height: 480px">![image](https://user-images.githubusercontent.com/85073588/156374383-61b19148-831d-4707-be67-5da92a7eb14c.png)</img>
 
 ## Conceptual model
-![image](https://user-images.githubusercontent.com/85073588/156374865-d720d90e-162b-44fa-b92f-5e2f8a7234b6.png)
+<img >![image](https://user-images.githubusercontent.com/85073588/156374865-d720d90e-162b-44fa-b92f-5e2f8a7234b6.png)</img>
 
 ## Technologies
 
@@ -48,12 +48,12 @@ The app was deployed in the cloud, and can be visualized <a href="https://dsvend
 - Spring tool suite (STS)
 
 ## How to run the app
-
+### backend
 For this, you will need to install the JDK (java development kit) and maven
 
 ```bash
 # clone repo
-git clone https://github.com/joaopaulu/sds3.git
+git clone https://github.com/v-cobof/dsvendas-sds4.git
 
 # change directory to backend
 cd backend
@@ -66,4 +66,3 @@ cd backend
 
 
 
-### backend
